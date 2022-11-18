@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/UI/UIStyles.uss?fileID=7433441132597879392&amp;guid=417515697cfccb0148df76afce2fbc8b&amp;type=3#UIStyles" />
+    <ui:GroupBox class="DescriptorContainer" style="flex-direction: row;">
+        <ui:Toggle binding-path="enabled" value="false" name="Equipped" />
+        <ui:GroupBox>
+            <ui:Label tabindex="-1" text="Name" display-tooltip-when-elided="true" binding-path="Name" name="Name" class="ItemName" />
+            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="Description" binding-path="Description" class="ItemDescription" />
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:Label tabindex="-1" text="Cost" display-tooltip-when-elided="true" name="Cost" binding-path="_cost" class="ItemCost" style="padding-right: 0;" />
+                <ui:Label tabindex="-1" text="bottlecaps" display-tooltip-when-elided="true" class="ItemCost" />
+            </ui:VisualElement>
+        </ui:GroupBox>
+    </ui:GroupBox>
+</ui:UXML>

@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/UI/UIStyles.uss?fileID=7433441132597879392&amp;guid=417515697cfccb0148df76afce2fbc8b&amp;type=3#UIStyles" />
+    <ui:VisualElement style="width: 30%; align-items: stretch; background-color: rgba(255, 255, 255, 0);">
+        <ui:Label tabindex="-1" text="Build a car to conquer the wasteland!" display-tooltip-when-elided="true" name="Title" style="-unity-font-style: normal; font-size: 25px; -unity-font: url(&apos;project://database/Assets/Fonts/Evogria.otf?fileID=12800000&amp;guid=9fd7b677d18886cfea2337e85ab4e151&amp;type=3#Evogria&apos;); -unity-font-definition: none;" />
+        <ui:VisualElement class="Subtitle" style="flex-direction: row;">
+            <ui:Label tabindex="-1" text="Cost" display-tooltip-when-elided="true" style="-unity-font-definition: none; -unity-font: url(&apos;project://database/Assets/Fonts/Aero%20Matics%20Display%20Light.ttf?fileID=12800000&amp;guid=7856f552a73a39612bc5c801b1646c9a&amp;type=3#Aero Matics Display Light&apos;);" />
+            <ui:Label tabindex="-1" text="000" display-tooltip-when-elided="true" name="TotalCost" style="-unity-font-style: bold; -unity-font-definition: none; -unity-font: url(&apos;project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&amp;guid=d63425cf7d3ab3dc0b64652f78c24ee1&amp;type=3#BebasNeue-Regular&apos;);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Button text="&lt;" display-tooltip-when-elided="true" name="BackButton" style="position: absolute; right: 20px; bottom: auto; top: 20px; width: 60px; height: 60px; visibility: visible; font-size: 30px; -unity-font-style: bold;" />
+    <ui:DropdownField label="Choose a car" index="0" choices="Foo,Bar,Bey" name="CarDropdown" class="ItemName" style="position: absolute; right: 20px; top: 100px; width: 30%; min-width: 300px;" />
+    <ui:GroupBox class="ItemCost DescriptorContainer" style="position: absolute; right: 20px; top: 160px; width: 180px; flex-direction: column; align-items: flex-end; margin-left: 0;">
+        <ui:Label tabindex="-1" text="Horsepower: 300&#10;Torque: 280N&#10;Grip: 3&#10;Armour: 400&#10;Drag Coefficient: 0.4&#10;Fuel Economy: 60 MPG&#10;Mass: 4000kg" display-tooltip-when-elided="true" name="CarData" class="ItemDescription" style="-unity-text-align: upper-right; white-space: nowrap;" />
+    </ui:GroupBox>
+    <ui:GroupBox name="CarInfo" style="position: absolute; right: 0; bottom: 0; align-items: flex-end;">
+        <ui:Label tabindex="-1" text="Car" display-tooltip-when-elided="true" name="CarName" binding-path="Name" style="-unity-font-definition: none; -unity-font: url(&apos;project://database/Assets/Fonts/Rocks%20Death.ttf?fileID=12800000&amp;guid=4af846bbae03deb2f9d1bef60350264a&amp;type=3#Rocks Death&apos;); font-size: 100px;" />
+        <ui:Label tabindex="-1" text="Description" display-tooltip-when-elided="true" name="CarDescription" binding-path="Description" class="ItemDescription" style="-unity-text-align: upper-right; width: 400px; -unity-font: url(&apos;project://database/Assets/Fonts/Evogria.otf?fileID=12800000&amp;guid=9fd7b677d18886cfea2337e85ab4e151&amp;type=3#Evogria&apos;);" />
+        <ui:Toggle label="Show summary" name="ShowSummaryToggle" class="ItemDescription" style="margin-top: 10px;" />
+    </ui:GroupBox>
+    <ui:ScrollView name="Summary" horizontal-scroller-visibility="Hidden" class="ItemDescription" style="position: absolute; width: 60%; left: 20%; top: 150px; height: 60%; background-color: rgb(255, 255, 255); display: none;" />
+</ui:UXML>

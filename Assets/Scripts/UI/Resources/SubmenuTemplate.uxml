@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/UI/UIStyles.uss?fileID=7433441132597879392&amp;guid=417515697cfccb0148df76afce2fbc8b&amp;type=3#UIStyles" />
+    <ui:GroupBox name="SubmenuItem" class="DescriptorContainer" style="flex-direction: column; margin-bottom: 5px;">
+        <ui:Label tabindex="-1" text="Category" display-tooltip-when-elided="true" binding-path="Name" name="Name" class="Subtitle" />
+        <ui:Label tabindex="-1" text="Description description" display-tooltip-when-elided="true" name="Description" binding-path="Description" class="ItemDescription" />
+    </ui:GroupBox>
+</ui:UXML>

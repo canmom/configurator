@@ -1,0 +1,42 @@
+.ItemName {
+    -unity-font-style: bold;
+    -unity-font-definition: none;
+    -unity-font: url('project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=d63425cf7d3ab3dc0b64652f78c24ee1&type=3#BebasNeue-Regular');
+    font-size: 20px;
+}
+
+.ItemDescription {
+    -unity-font-style: normal;
+    white-space: normal;
+    -unity-font: url('project://database/Assets/Fonts/Designosaur-Regular.ttf?fileID=12800000&guid=cd2d331cfae31e15992e5fcb5cfb3bf6&type=3#Designosaur-Regular');
+    -unity-font-definition: none;
+    font-size: 16px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.DescriptorContainer {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.21);
+}
+
+.ItemCost {
+    -unity-font-style: italic;
+    -unity-font: url('project://database/Assets/Fonts/Designosaur-Regular.ttf?fileID=12800000&guid=cd2d331cfae31e15992e5fcb5cfb3bf6&type=3#Designosaur-Regular');
+    -unity-font-definition: none;
+    font-size: 16px;
+}
+
+.Subtitle {
+    font-size: 20px;
+    -unity-font-definition: none;
+    -unity-font: url('project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=d63425cf7d3ab3dc0b64652f78c24ee1&type=3#BebasNeue-Regular');
+    padding-bottom: 0;
+    margin-bottom: 0;
+}

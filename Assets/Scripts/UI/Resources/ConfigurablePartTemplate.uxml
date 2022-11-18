@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/UI/UIStyles.uss?fileID=7433441132597879392&amp;guid=417515697cfccb0148df76afce2fbc8b&amp;type=3#UIStyles" />
+    <ui:GroupBox style="flex-basis: auto; width: auto; flex-direction: row;">
+        <ui:Label tabindex="-1" text="Component" display-tooltip-when-elided="true" binding-path="Name" class="Subtitle" style="rotate: -90deg; position: absolute; left: 30px; top: auto; transform-origin: left bottom; bottom: 5px;" />
+        <ui:GroupBox name="ConfigurablePartSelector" class="DescriptorContainer">
+            <ui:Button text="&lt;" display-tooltip-when-elided="true" name="Previous" style="width: 10%;" />
+            <ui:GroupBox name="VariantInfo" binding-path="Variant" style="width: 100px; flex-grow: 1; flex-basis: auto;">
+                <ui:Label tabindex="-1" text="Name" display-tooltip-when-elided="true" name="Name" binding-path="Name" class="ItemName" />
+                <ui:Label tabindex="-1" text="Description " display-tooltip-when-elided="true" name="Description" binding-path="Description" class="ItemDescription" />
+                <ui:VisualElement style="flex-direction: row;">
+                    <ui:Label tabindex="-1" text="Cost" display-tooltip-when-elided="true" name="Cost" binding-path="Cost" class="ItemCost" />
+                    <ui:Label tabindex="-1" text="teeth" display-tooltip-when-elided="true" class="ItemCost" />
+                </ui:VisualElement>
+            </ui:GroupBox>
+            <ui:Button text="&gt;" display-tooltip-when-elided="true" name="Next" style="width: 10%;" />
+        </ui:GroupBox>
+    </ui:GroupBox>
+</ui:UXML>
